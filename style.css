@@ -366,13 +366,13 @@ textarea:focus {
     position: relative;
     width: 100%;
     z-index: 100;
-    /*height: 160px;*/
+    height: 75px;
     -webkit-transition-duration: 700ms;
     transition-duration: 700ms; }
     .header-area .vcard-main-menu .classy-nav-container {
       background-color: transparent; }
     .header-area .vcard-main-menu .classy-navbar {
-      /*height: 160px;*/
+      height: 75px;
       padding: 0;
       -webkit-transition-duration: 700ms;
       transition-duration: 700ms; }
