@@ -449,13 +449,13 @@ textarea:focus {
         position: relative;
         width: 100%;
         z-index: 100;
-        height: 160px;
+        /*height: 160px;*/
         @include trans-duration(700ms);
         .classy-nav-container {
             background-color: transparent;
         }
         .classy-navbar {
-            height: 160px;
+            /*height: 160px;*/
             padding: 0;
             @include trans-duration(700ms);
             .classynav ul li a {
