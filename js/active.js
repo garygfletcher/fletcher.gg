@@ -79,6 +79,17 @@
             removalDelay: 200,
             preloader: false,
             fixedContentPos: true,
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com',
+                        id: function (url) {
+                            return url;
+                        },
+                        src: '%id%'
+                    }
+                }
+            },
             callbacks: {
                 elementParse: function (item) {
                     var src = item.el.attr('data-video-src');
