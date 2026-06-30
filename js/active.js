@@ -58,6 +58,34 @@
                 enabled: true
             }
         });
+
+        // Open embedded YouTube movies in a large, responsive modal.
+        $('iframe[src*="youtube.com/embed/"]').each(function () {
+            var $iframe = $(this);
+            var src = $iframe.attr('src');
+            var videoId = src.split('/embed/')[1].split(/[?&]/)[0];
+            var $preview = $('<button type="button" class="youtube-movie" aria-label="Play YouTube video">' +
+                '<img src="https://i.ytimg.com/vi/' + videoId + '/hqdefault.jpg" alt="">' +
+                '<span class="youtube-movie-play" aria-hidden="true"></span>' +
+                '</button>');
+
+            $preview.attr('data-video-src', src);
+            $iframe.closest('.embed-responsive').empty().append($preview);
+        });
+
+        $('.youtube-movie').magnificPopup({
+            type: 'iframe',
+            mainClass: 'youtube-modal',
+            removalDelay: 200,
+            preloader: false,
+            fixedContentPos: true,
+            callbacks: {
+                elementParse: function (item) {
+                    var src = item.el.attr('data-video-src');
+                    item.src = src + (src.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1';
+                }
+            }
+        });
     }
 
     // :: 7.0 ScrollUp Active Code
