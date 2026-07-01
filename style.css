@@ -358,6 +358,15 @@ img {
   top: -30px;
   right: 0; }
 
+@media (max-width: 767px) {
+  #gerfalcon-restoration .btn,
+  #paddlesport .btn {
+    max-width: calc(100% - 1rem);
+    margin-bottom: 0.5rem;
+    white-space: normal; }
+  .education-area {
+    overflow-x: clip; } }
+
 input:focus,
 textarea:focus {
   outline: none;
