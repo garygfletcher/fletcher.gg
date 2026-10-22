@@ -1269,6 +1269,9 @@ main .btn:hover {
 .appointments-grid article { border-top: 1px solid var(--line); padding-top: 22px; }
 .appointments-grid h3 { font: 400 23px/1.25 Georgia,serif; margin-bottom: 12px; }
 #volunteering .appointment-role { font-size: 12px; color: #856122; margin-bottom: 12px; }
+.heritage-friend { display: flex; align-items: center; gap: 24px; margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); }
+#volunteering .heritage-friend img { width: clamp(80px, 20vw, 130px); height: auto; flex-shrink: 0; mix-blend-mode: multiply; border-radius: 0; box-shadow: none; }
+#volunteering .heritage-friend p { margin: 0; }
 .qualifications { border-top: 1px solid #c4a770; border-bottom: 1px solid #c4a770; margin-top: 40px; }
 .qualifications summary { cursor: pointer; font: 400 24px/1.4 Georgia,serif; color: var(--ink); padding: 24px 0; }
 .qualifications dl { margin-bottom: 24px; }
