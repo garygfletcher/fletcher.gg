@@ -1126,6 +1126,10 @@ main .btn:hover {
   letter-spacing: .08em;
 }
 .site-menu { gap: 24px; }
+.credential-abbr { cursor: help; text-decoration: underline dotted; text-underline-offset: 4px; text-decoration-thickness: 1px; }
+.credential-abbr:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 2px; }
+.credential-tooltip { position: fixed; z-index: 10000; max-width: min(290px, calc(100vw - 24px)); padding: 10px 14px; border: 1px solid #c4a770; border-radius: 6px; background: #102944; color: #fffefa; font: 400 14px/1.5 system-ui, sans-serif; letter-spacing: normal; box-shadow: 0 4px 18px rgba(0,0,0,.18); }
+.credential-tooltip[hidden] { display: none; }
 .hero-banner {
   display: block;
   position: relative;
