@@ -60,6 +60,16 @@ img {
 button {
   font:inherit;
 }
+.email-reveal {
+  cursor:pointer;
+}
+.email-reveal:not(.button) {
+  background:none;
+  border:0;
+  padding:0;
+  color:inherit;
+  text-align:inherit;
+}
 figure {
   margin:0;
 }

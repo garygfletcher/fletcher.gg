@@ -1,5 +1,20 @@
 (function () {
     'use strict';
+    // Only construct the contact address after a visitor requests it.
+    document.querySelectorAll('.email-reveal').forEach(function (button) {
+        button.addEventListener('click', function () {
+            var address = String.fromCharCode(119, 101, 98, 115, 105, 116, 101, 64, 102, 108, 101, 116, 99, 104, 101, 114, 46, 103, 103);
+            var contact = document.getElementById('email-contact');
+            if (!contact.firstChild) {
+                var link = document.createElement('a');
+                link.href = 'mailto:' + address;
+                link.textContent = address;
+                contact.appendChild(link);
+            }
+            contact.scrollIntoView({ block: 'center' });
+            contact.firstChild.focus();
+        });
+    });
     var toggle = document.querySelector('.menu-toggle');
     var menu = document.getElementById('site-menu');
     function closeMenu() {
