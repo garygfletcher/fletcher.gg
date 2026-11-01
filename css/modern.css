@@ -558,7 +558,7 @@ figure {
   font-weight: 400;
   letter-spacing: -.025em;
 }
-.restoration-intro { max-width: 770px; }
+.restoration-intro { max-width: none; }
 .restoration-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
