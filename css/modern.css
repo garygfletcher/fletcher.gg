@@ -1287,7 +1287,8 @@ main .btn:hover {
 #volunteering .heritage-friend img { width: 28px; height: 20px; flex: 0 0 28px; object-fit: contain; margin: 2px 0 0; padding: 0; border: 0; mix-blend-mode: multiply; border-radius: 0; box-shadow: none; }
 .appointments-grid .appointment-heading { display: flex; align-items: center; gap: 14px; }
 .appointment-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; flex: 0 0 48px; border: 1px solid #c4a770; border-radius: 8px; background: #163d5a; color: #fffefa; font: 600 11px/1 system-ui, sans-serif; letter-spacing: .02em; }
-#volunteering .appointments-grid .heritage-friend img { width: 48px; height: 48px; flex: 0 0 48px; margin-top: 0; }
+#volunteering .appointments-grid .appointment-logo,
+#volunteering .appointments-grid .heritage-friend img { box-sizing: border-box; width: 48px; height: 48px; flex: 0 0 48px; object-fit: contain; object-position: center; margin: 0; padding: 4px; background: #fff; border: 1px solid #e5e1d8; border-radius: 6px; mix-blend-mode: normal; box-shadow: none; }
 .qualifications { border-top: 1px solid #c4a770; border-bottom: 1px solid #c4a770; margin-top: 40px; }
 .qualifications summary { cursor: pointer; font: 400 24px/1.4 Georgia,serif; color: var(--ink); padding: 24px 0; }
 .qualifications dl { margin-bottom: 24px; }
