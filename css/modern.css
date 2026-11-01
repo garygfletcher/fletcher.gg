@@ -1357,8 +1357,10 @@ main .btn:hover {
   .appointments-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 600px) {
-  .navigation .wordmark { font-size: 20px; }
-  .navigation .wordmark-credentials { display: block; margin-left: 0; font-size: 10px; line-height: 1.5; }
+  .navigation { gap: 12px; }
+  .navigation .wordmark { font-size: clamp(17px, 5vw, 20px); flex-shrink: 0; white-space: nowrap; }
+  .navigation .wordmark-credentials { display: inline; margin-left: 4px; font-size: 10px; line-height: inherit; }
+  .navigation .menu-toggle { flex-shrink: 0; }
   .hero-banner { min-height: 740px; padding: 66px 0 85px; }
   .hero-banner .hero-photo > img { object-position: 66% center; }
   .hero-banner .hero-photo::after { background: linear-gradient(90deg,rgba(7,25,45,.92),rgba(7,25,45,.68)); }
