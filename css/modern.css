@@ -1292,8 +1292,10 @@ main .btn:hover {
 .qualifications { border-top: 1px solid #c4a770; border-bottom: 1px solid #c4a770; margin-top: 40px; }
 .qualifications summary { cursor: pointer; font: 400 24px/1.4 Georgia,serif; color: var(--ink); padding: 24px 0; }
 .qualifications dl { margin-bottom: 24px; }
-.qualifications dl>div { display: grid; grid-template-columns: 230px 1fr; gap: 30px; padding: 16px 0; border-top: 1px solid var(--line); font-size: 14px; }
-.qualifications dt { font-weight: 600; }
+.qualifications dl>div { display: grid; grid-template-columns: 306px 1fr; align-items: center; gap: 30px; padding: 16px 0; border-top: 1px solid var(--line); font-size: 14px; }
+.qualifications dt { display: flex; align-items: center; gap: 12px; font-weight: 600; }
+#volunteering .qualification-icon { display: block; min-width: 64px; max-width: 64px; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; aspect-ratio: auto; flex: 0 0 64px; width: 64px; height: 48px; object-fit: contain; color: #856122; }
+#volunteering svg.qualification-icon { box-sizing: border-box; padding: 12px 20px; }
 .qualifications dd { color: var(--muted); margin: 0; }
 .service-gallery-section { padding: 75px 0; background: #102944; }
 .service-gallery-section h2 { font: 400 45px/1.2 Georgia,serif; color: #fffefa; }
@@ -1387,6 +1389,7 @@ main .btn:hover {
   .service-gallery figcaption strong { font-size: 13px; }
   .service-gallery figcaption span { font-size: 11px; }
   .qualifications dl>div { grid-template-columns: 1fr; gap: 8px; }
+  .qualifications dd { padding-left: 76px; }
   #volunteering .service-portrait { max-width: 350px; margin: 0 auto; }
   #volunteering .service-portrait img { max-height: 460px; }
   #volunteering h2, #gerfalcon-restoration h2, #paddlesport h2 { font-size: 36px; }
