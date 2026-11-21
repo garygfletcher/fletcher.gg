@@ -1288,13 +1288,14 @@ main .btn:hover {
 .appointments-grid .appointment-heading { display: flex; align-items: center; gap: 14px; }
 .appointment-icon { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; flex: 0 0 48px; border: 1px solid #c4a770; border-radius: 8px; background: #163d5a; color: #fffefa; font: 600 11px/1 system-ui, sans-serif; letter-spacing: .02em; }
 #volunteering .appointments-grid .appointment-logo,
-#volunteering .appointments-grid .heritage-friend img { box-sizing: border-box; width: 48px; height: 48px; flex: 0 0 48px; object-fit: contain; object-position: center; margin: 0; padding: 4px; background: #fff; border: 1px solid #e5e1d8; border-radius: 6px; mix-blend-mode: normal; box-shadow: none; }
+#volunteering .appointments-grid .heritage-friend img { box-sizing: border-box; width: 48px; height: 48px; flex: 0 0 48px; object-fit: contain; object-position: center; margin: 0; padding: 4px; background: transparent; border: 0; border-radius: 0; mix-blend-mode: multiply; box-shadow: none; }
 .qualifications { border-top: 1px solid #c4a770; border-bottom: 1px solid #c4a770; margin-top: 40px; }
 .qualifications summary { cursor: pointer; font: 400 24px/1.4 Georgia,serif; color: var(--ink); padding: 24px 0; }
 .qualifications dl { margin-bottom: 24px; }
 .qualifications dl>div { display: grid; grid-template-columns: 306px 1fr; align-items: center; gap: 30px; padding: 16px 0; border-top: 1px solid var(--line); font-size: 14px; }
 .qualifications dt { display: flex; align-items: center; gap: 12px; font-weight: 600; }
 #volunteering .qualification-icon { display: block; min-width: 64px; max-width: 64px; max-height: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; aspect-ratio: auto; flex: 0 0 64px; width: 64px; height: 48px; object-fit: contain; color: #856122; }
+#volunteering img.qualification-icon { background: transparent; mix-blend-mode: multiply; }
 #volunteering svg.qualification-icon { box-sizing: border-box; padding: 12px 20px; }
 .qualifications dd { color: var(--muted); margin: 0; }
 .service-gallery-section { padding: 75px 0; background: #102944; }
